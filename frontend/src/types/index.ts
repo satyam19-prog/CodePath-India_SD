@@ -1,7 +1,7 @@
 export type Role = 'STUDENT' | 'TEACHER' | 'ADMIN';
 
 export interface User {
-  id: number;
+  id: string;
   name: string;
   email: string;
   role: Role;

@@ -21,9 +21,14 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const savedToken = localStorage.getItem('cp_token');
     const savedUser = localStorage.getItem('cp_user');
 
-    if (savedToken && savedUser) {
-      setToken(savedToken);
-      setUser(JSON.parse(savedUser));
+    if (savedToken && savedUser && savedUser !== 'undefined') {
+      try {
+        setToken(savedToken);
+        setUser(JSON.parse(savedUser));
+      } catch (e) {
+        localStorage.removeItem('cp_token');
+        localStorage.removeItem('cp_user');
+      }
     }
     setLoading(false);
   }, []);
