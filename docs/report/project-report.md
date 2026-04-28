@@ -380,21 +380,6 @@ Both frontend and backend are compiled with `tsc --noEmit` (strict mode) to ensu
 
 ---
 
-## 7. Screenshots
-
-> *Screenshots can be added here showing:*
-> 1. Landing Page
-> 2. Login / Register Page
-> 3. Student Dashboard
-> 4. Challenge List with Filters
-> 5. Monaco Code Editor (SolveProblem)
-> 6. Teacher — Create Challenge with Hidden Test Cases
-> 7. Classroom Page with Google Meet Link
-> 8. Leaderboard
-> 9. Profile with Badges
-
----
-
 ## 8. Challenges Faced & Solutions
 
 | Challenge | Solution |
